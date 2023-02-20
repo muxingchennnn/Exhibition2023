@@ -87,12 +87,12 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
     // */
     var simulation = d3.forceSimulation(data.nodes)
         .force("link", d3.forceLink(data.links).id(function (d) { return d.id; }).distance(10).strength(2))
-        // .force('y', d3.forceY().y(function (d) {
-        //     return height/2;
-        // }).strength(3))
+        .force('y', d3.forceY().y(function (d) {
+            return height/2;
+        }).strength(2))
         .force("charge", d3.forceManyBody().strength(-20))
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().strength(.5).radius(10));
+        .force("collide", d3.forceCollide().strength(1).radius(10));
 
     // /* DRAW THE LINES FOR LINKS */
     var link = svg.append("g")
