@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'ClashDisplay-Variable';
+  src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('./fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo-Variable';
+  src: url('./fonts/Archivo-Variable.woff2') format('woff2'),
+    url('./fonts/Archivo-Variable.woff') format('woff'),
+    url('./fonts/Archivo-Variable.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rang';
+  src: url('./fonts/RANG2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Orelo';
+  src: url('./fonts/Orelo Wide Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Dehila';
+  src: url('./fonts/Dahlia Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Voyage';
+  src: url('./fonts/Voyage-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('./fonts/SpaceGrotesk-Bold.ttf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #000000;
+  overflow: hidden;
+}
+
+.site-logo,
+.site-info,
+.menu-item,
+.header-left,
+.header-right,
+.link {
+  color: #fefefe;
+}
+
+.container-items {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+}
+
+.item {
+  position: relative;
+  flex-grow: 1;
+  font-family: 'Mak';
+  font-size: 220px;
+  transition: all 300ms ease-in-out;
+}
+
+.item:hover {
+  flex-grow: 2;
+  font-size: 400px;
+}
+
+h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fefefe;
+  font-family: 'ClashDisplay-Variable', sans-serif;
+  /* font-family: 'Rang', sans-serif;
+  font-family: 'Orelo', sans-serif;
+  font-family: 'Voyage', sans-serif;
+  font-family: 'SpaceGrotesk', sans-serif; */
+  font-weight: 700;
+}
+
+h3:hover {
+  color: #ff7519;
+}
+
+img {
+  width: 100%;
+}
+
+.container-img-wrap {
+  position: absolute;
+  top: -70rem;
+  left: -70px;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.container-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 900px) {
+  .container-items {
+    height: 100px;
+  }
+  .item {
+    font-size: 20px;
+  }
+  .item:hover {
+    flex-grow: 1;
+    font-size: 20px;
+  }
+  .container-img-wrap {
+    display: none;
+  }
+  .navbar {
+    display: none !important;
+  }
+}
+
+.site-logo {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'ClashDisplay-Variable';
+  font-size: 28px;
+  line-height: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 100px;
+}
+
+.site-menu {
+  display: flex;
+  font-family: 'Archivo-Variable', sans-serif;
+  font-weight: 400;
+}
+
+.site-info {
+  /* font-family: 'Archivo-Variable', sans-serif;
+  font-weight: 400; */
+  display: flex;
+}
+
+.header-left {
+  /* display: flex; */
+  font-family: 'ClashDisplay-Variable', sans-serif;
+  font-weight: 100;
+}
+
+.header-left-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Archivo-Variable', sans-serif;
+  font-weight: 700;
+}
+
+ion-icon {
+  font-size: 45px;
+  position: relative;
+  color: #ff7519;
+}
+
+.header-right {
+  display: flex;
+  font-family: 'Archivo-Variable', sans-serif;
+  font-weight: 700;
+}
+
+.menu-item {
+  margin-left: 60px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  top: 20%;
+  padding: 40px;
+  text-transform: uppercase;
+  font-family: 'Mak';
+  font-size: 40px;
+  z-index: 2;
+}
+
+.header-left span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  margin: 40px 0;
+}
+
+.link a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
