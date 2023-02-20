@@ -17,8 +17,7 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
     const nodeValues = [...new Set(uniqueNames.concat(uniqueKeys))];
 
     console.log(linkValues);
-    console.log(uniqueNames.concat(uniqueKeys))
-    console.log([...new Set(uniqueNames.concat(uniqueKeys))])
+    console.log(uniqueNames)
 
     for (let n in nodeValues) {
         nodes.push({"id": +n,
@@ -57,14 +56,29 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
     //     .domain(uniqueZones)
     //     .range(["#383867", "#33431e", "#a36629", "#92462f", "#b63e36", "#b74a70", "#946943"]);
 
-    // let sizeScale = d3.scaleLinear()
-    //     .domain(influenceXtnt)
-    //     .range([1, 10]);
+    let theme = ["design", "experience", "information"];
+    let names = [...new Set(linkValues.filter(d => !theme.includes(d.name)).map(d => d.name))];
+
+    let keywordSize = Array(uniqueKeys.length).fill(4);
+    let nameSize = Array(names.length).fill(6);
+
+    let sizeDomain = theme.concat(names.concat(uniqueKeys))
+    let sizeRange = [9, 7, 7].concat(nameSize.concat(keywordSize));
+    let colorRange = d3.schemeTableau10.concat(Array(uniqueKeys.length).fill("#D7D7D7"))
+
+    console.log(sizeDomain, sizeRange)
+
+    let sizeScale = d3.scaleOrdinal()
+        .domain(sizeDomain)
+        .range(sizeRange);
+
+    let colorScale = d3.scaleOrdinal()
+        .domain(sizeDomain)
+        .range(colorRange);
 
     // let strokeScale = d3.scaleLinear()
     //     .domain(weightXtnt)
     //     .range([1, 10]);
-
     // /* 
     // INITIALIZE FORCE SIMULATION 
     // Find a layout that you like by tweaking the parameters. 
@@ -78,7 +92,7 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
         // }).strength(3))
         .force("charge", d3.forceManyBody().strength(-20))
         .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", d3.forceCollide().radius(15));
+        .force("collide", d3.forceCollide().strength(.5).radius(10));
 
     // /* DRAW THE LINES FOR LINKS */
     var link = svg.append("g")
@@ -86,7 +100,7 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
         .data(data.links)
         .enter()
         .append("line")
-        .attr("stroke", "#FFFFFF")
+        .attr("stroke", "#D7D7D7")
         // .attr("stroke-width", function(d) {return strokeScale(d.weight); });
 
     // /* 
@@ -98,13 +112,8 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
         .data(data.nodes)
         .enter()
         .append("circle")
-        // .attr("stroke", "#fff")
-        // .attr("stroke-width", 0.5)
-        // .attr("fill", function(d) { return colorScale(d.zone); })
-        // .attr("r", function(d) { return sizeScale(d.influence); })
-        .attr("r", 5)
-        .attr("stroke", "grey")
-        .attr("stroke-width", 2);
+        .attr("fill", function(d) { return colorScale(d.name); })
+        .attr("r", function(d) { return sizeScale(d.name); });
 
     // /* 
     // TICK THE SIMULATION 
@@ -130,23 +139,23 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
     });
 
     // /* ADD A TOOLTIP */
-    // var tooltip = d3.select("#chart")
-    //     .append("div")
-    //     .attr("class", "tooltip");
+    var tooltip = d3.select("#chart")
+        .append("div")
+        .attr("class", "tooltip");
 
-    // node.on("mouseover", function (e, d) {
-    //     var cx = d.x + 20;
-    //     var cy = d.y - 10;
-    //     // console.log(d)
+    node.on("mouseover", function (e, d) {
+        var cx = d.x + 20;
+        var cy = d.y - 10;
+        // console.log(d)
 
-    //     tooltip.style("visibility", "visible")
-    //         .style("left", cx + "px")
-    //         .style("top", cy + "px")
-    //         .html(`Character: ${d.character}<br> Zone: ${d.zone}`);
+        tooltip.style("visibility", "visible")
+            .style("left", cx + "px")
+            .style("top", cy + "px")
+            .html(`${d.name}`);
 
-    // }).on("mouseout", function () {
-    //     tooltip.style("visibility", "hidden");
-    // });
+    }).on("mouseout", function () {
+        tooltip.style("visibility", "hidden");
+    });
 
     // svg.append("text")
     // .attr("x", 25)
