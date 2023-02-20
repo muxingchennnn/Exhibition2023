@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'ClashDisplay-Variable';
-  src: url('./fonts/ClashDisplay-Variable.woff2') format('woff2'),
-    url('./fonts/ClashDisplay-Variable.woff') format('woff'),
-    url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+  src: url('../assets/fonts/ClashDisplay-Variable.woff2') format('woff2'),
+    url('../assets/fonts/ClashDisplay-Variable.woff') format('woff'),
+    url('../assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: 'Archivo-Variable';
-  src: url('./fonts/Archivo-Variable.woff2') format('woff2'),
-    url('./fonts/Archivo-Variable.woff') format('woff'),
-    url('./fonts/Archivo-Variable.ttf') format('truetype');
+  src: url('../assets/fonts/Archivo-Variable.woff2') format('woff2'),
+    url('../assets/fonts/Archivo-Variable.woff') format('woff'),
+    url('../assets/fonts/Archivo-Variable.ttf') format('truetype');
   font-weight: 100 900;
   font-display: swap;
   font-style: normal;
@@ -20,27 +20,27 @@
 
 @font-face {
   font-family: 'Rang';
-  src: url('./fonts/RANG2.otf') format('opentype');
+  src: url('../assets/fonts/RANG2.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Orelo';
-  src: url('./fonts/Orelo Wide Bold.otf') format('opentype');
+  src: url('../assets/fonts/Orelo Wide Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Dehila';
-  src: url('./fonts/Dahlia Bold.otf') format('opentype');
+  src: url('../assets/fonts/Dahlia Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Voyage';
-  src: url('./fonts/Voyage-Regular.otf') format('opentype');
+  src: url('../assets/fonts/Voyage-Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'SpaceGrotesk';
-  src: url('./fonts/SpaceGrotesk-Bold.ttf') format('opentype');
+  src: url('../assets/fonts/SpaceGrotesk-Bold.ttf') format('opentype');
 }
 
 * {
