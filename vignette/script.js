@@ -1,5 +1,7 @@
-var width = document.querySelector("#chart").clientWidth;
-var height = document.querySelector("#chart").clientHeight;
+// var width = document.querySelector("#chart").clientWidth;
+// var height = document.querySelector("#chart").clientHeight;
+var width = 1340;
+var height = 546;
 var svg = d3.select("#chart")
     .append("svg")
     .attr("width", width)
@@ -16,8 +18,8 @@ d3.csv("../data/project_keywords - V1.csv").then(function (linkValues) {
     const uniqueKeys = [...new Set(linkValues.map(item => item.keyword))];
     const nodeValues = [...new Set(uniqueNames.concat(uniqueKeys))];
 
-    console.log(linkValues);
-    console.log(uniqueNames)
+    // console.log(linkValues);
+    // console.log(uniqueNames)
 
     for (let n in nodeValues) {
         nodes.push({"id": +n,
