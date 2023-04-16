@@ -1,11 +1,17 @@
 // loading animation
 const tl = gsap.timeline()
 
-tl.from('.logo', 1.6, {
+tl.from('.logo-exhibition', 1.6, {
   opacity: 0,
   y: 60,
   ease: Expo.easeInOut,
   delay: 0.5,
+})
+
+gsap.from('.divider', 1.6, {
+  scaleX: 0,
+  ease: 'power3.inOut',
+  delay: 1,
 })
 
 tl.from('.event', 1.6, {
@@ -60,6 +66,40 @@ tl.from(
   '<0.5'
 )
 
+tl.staggerFrom(
+  '.navigation-sites',
+  2,
+  {
+    opacity: 0,
+    x: 30,
+    ease: Expo.easeInOut,
+  },
+  0.2,
+  '<'
+)
+
+tl.staggerFrom(
+  '.navigation-icons',
+  2,
+  {
+    opacity: 0,
+    x: 30,
+    ease: Expo.easeInOut,
+  },
+  0.2,
+  '<'
+)
+
+tl.from(
+  '.logo-camd',
+  2,
+  {
+    opacity: 0,
+    x: 30,
+    ease: Expo.easeInOut,
+  },
+  '<'
+)
 // hovering effect
 const projects = document.querySelectorAll('.project')
 
