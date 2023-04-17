@@ -193,12 +193,11 @@ footer {
   text-decoration: none;
 } */
 
-.project > a:hover {
+/* .project > a:hover {
   font-weight: 700;
   color: #f26922;
   transition: 0.05s linear;
-  /* pointer-events: none; */
-}
+} */
 
 .image-wrapper {
   position: fixed;
@@ -256,7 +255,7 @@ footer {
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 420px) {
   #container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -363,6 +362,11 @@ footer {
   } */
 }
 
-@media (hover: none) {
-  /* styles for touchscreen devices */
+@media (hover: hover) {
+  .project > a:hover {
+    font-weight: 700;
+    color: #f26922;
+    transition: 0.05s linear;
+    /* pointer-events: none; */
+  }
 }
