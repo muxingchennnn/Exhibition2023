@@ -221,7 +221,7 @@ footer {
   object-fit: cover;
 }
 
-@media (width <= 1450px) {
+@media screen and (width <= 1450px) {
   .logo-exhibition {
     grid-column: 1/8;
     grid-row: 1/2;
@@ -229,7 +229,7 @@ footer {
   }
 }
 
-@media (width <= 1250px) {
+@media screen and (width <= 1250px) {
   .logo-exhibition {
     grid-column: 1/9;
     grid-row: 1/2;
@@ -242,7 +242,7 @@ footer {
   }
 }
 
-@media (width <= 1150px) {
+@media screen and (width <= 1150px) {
   .logo-exhibition {
     grid-column: 1/10;
     grid-row: 1/2;
@@ -255,7 +255,7 @@ footer {
   }
 }
 
-@media (width <= 420px) {
+@media screen and (width <= 700px) {
   #container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
