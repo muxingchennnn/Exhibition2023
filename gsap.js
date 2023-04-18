@@ -101,6 +101,7 @@ tl.from(
   '<'
 )
 
+// detect the mobile devices
 const isMobile = function () {
   return (
     navigator.maxTouchPoints > 0 && /Android|iPhone/i.test(navigator.userAgent)
