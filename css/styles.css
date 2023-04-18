@@ -255,7 +255,7 @@ footer {
   }
 }
 
-@media screen and (width <= 700px) {
+@media screen and (width <= 700px) and (hover: none) {
   #container {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
