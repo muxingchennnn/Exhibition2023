@@ -110,6 +110,10 @@ img {
   font-weight: 200;
 }
 
+.project {
+  font-style: italic;
+}
+
 .iddv {
   grid-column: 8/9;
   grid-row: 2/3;
@@ -142,6 +146,35 @@ img {
 .xd-project {
   grid-column: 11/-1;
   grid-row: 3/4;
+}
+
+.typewriter {
+  position: relative;
+}
+
+.typewriter::after {
+  content: '';
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* bottom: 0; */
+  top: 0.5rem;
+  /* right: 0; */
+  width: 1px;
+  height: 1rem;
+  background: whitesmoke;
+  animation: blinkCursor 0.8s steps(3) infinite;
+}
+
+@keyframes blinkCursor {
+  0%,
+  75% {
+    ocpacity: 1;
+  }
+  76%,
+  100% {
+    ocpacity: 0;
+  }
 }
 
 a:link,
@@ -240,8 +273,6 @@ footer {
     margin-bottom: 50px;
   } */
   .logo-camd {
-    /* grid-column: 11/12;
-    grid-row: 1/2; */
     width: 90%;
   }
 }
@@ -253,9 +284,13 @@ footer {
     margin-bottom: 20px;
   }
   .logo-camd {
-    /* grid-column: 11/12;
-    grid-row: 1/2; */
     width: 80%;
+  }
+}
+
+@media screen and (width <= 950px) {
+  .logo-camd {
+    width: 70%;
   }
 }
 
