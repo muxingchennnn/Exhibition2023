@@ -146,7 +146,7 @@ body {
 .left--3 {
   /* background-color: steelblue; */
   grid-column: 1 / 4;
-  grid-row: 3;
+  grid-row: 4;
 
   position: sticky;
   top: 136px;
