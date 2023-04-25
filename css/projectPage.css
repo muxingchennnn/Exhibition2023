@@ -64,7 +64,11 @@ body {
 .mid--2,
 .mid--3,
 .mid--4,
-.mid--5 {
+.mid--5,
+.mid--6,
+.mid--7,
+.mid--8,
+.mid--9 {
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -187,6 +191,78 @@ body {
   grid-row: 5;
 }
 
+.left--6 {
+  grid-column: 1 / 4;
+  grid-row: 6;
+
+  position: sticky;
+  top: 244px;
+}
+
+.mid--6 {
+  grid-column: 4 / 10;
+  grid-row: 6;
+}
+
+.right--6 {
+  grid-column: 10 / 12;
+  grid-row: 6;
+}
+
+.left--7 {
+  grid-column: 1 / 4;
+  grid-row: 7;
+
+  position: sticky;
+  top: 280px;
+}
+
+.mid--7 {
+  grid-column: 4 / 10;
+  grid-row: 7;
+}
+
+.right--7 {
+  grid-column: 10 / 12;
+  grid-row: 7;
+}
+
+.left--8 {
+  grid-column: 1 / 4;
+  grid-row: 8;
+
+  position: sticky;
+  top: 316px;
+}
+
+.mid--8 {
+  grid-column: 4 / 10;
+  grid-row: 8;
+}
+
+.right--8 {
+  grid-column: 10 / 12;
+  grid-row: 8;
+}
+
+.left--9 {
+  grid-column: 1 / 4;
+  grid-row: 9;
+
+  position: sticky;
+  top: 352px;
+}
+
+.mid--9 {
+  grid-column: 4 / 10;
+  grid-row: 9;
+}
+
+.right--9 {
+  grid-column: 10 / 12;
+  grid-row: 9;
+}
+
 img {
   margin: auto;
   width: 100%;
@@ -206,4 +282,8 @@ img {
 
 footer {
   height: 400px;
+}
+
+.offset {
+  height: 7px;
 }

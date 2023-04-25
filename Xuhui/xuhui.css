@@ -18,7 +18,7 @@ body {
 }
 
 .marquee span {
-  font-family: 'Libre Caslon Display', serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 100px;
   padding-left: -10%;
   display: inline-block;
@@ -170,4 +170,29 @@ body {
 .right--4 {
   grid-column: 10 / 12;
   grid-row: 4;
+}
+
+.light {
+  font-weight: 200;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.left--8 {
+  grid-column: 1 / 4;
+  grid-row: 8;
+
+  position: sticky;
+  top: 352px;
+}
+
+.left--9 {
+  grid-column: 1 / 4;
+  grid-row: 9;
+
+  position: sticky;
+  top: 424px;
 }
