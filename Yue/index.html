@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interlunar</title>
+    <link href="../css/landingPage.css" rel="stylesheet" />
+    <link href="../css/infoWrapper.css" rel="stylesheet" />
+    <link href="yue.css" rel="stylesheet" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/vonique-43');
+    </style>
+  </head>
+  <body>
+    <div class="marquee">
+      <span>
+        Interlunar Interlunar Interlunar Interlunar Interlunar Interlunar
+      </span>
+    </div>
+    <div class="container">
+      <div class="left--1">
+        <div class="infoWrapper">
+          <div class="info-key info-key--1">DESIGNER</div>
+          <div class="info info--1">
+            <span>Yue Yu</span>
+            <!-- <span style="font-size: 14px">姜 禹汉</span> -->
+          </div>
+          <div class="info-key info-key--2">KEYWORD</div>
+          <div class="info info--2">
+            #Experience design<br />
+            #Sexual communication<br />
+            #Difficult conversation<br />
+            #Multimodal interaction
+          </div>
+          <div class="info-key info-key--3">ADVISOR</div>
+          <div class="info info--3">Michael Arnold Mages</div>
+        </div>
+      </div>
+      <div class="mid--1">
+        <p>
+          Interlunar provides a novel multimodal interaction on how couples can
+          communicate about sex. The integration of TMC (Technology-mediated
+          communication) and FtF(Face to Face) interaction aims to stimulate FtF
+          conversation through TMC with its disinhibition effect to reduce the
+          discomfort of difficult conversations, and allows users to communicate
+          naturally in a relaxed game atmosphere.
+        </p>
+
+        <img src="../assets/Yue/Group 8676.png" id="outlier" />
+      </div>
+      <div class="right--1"></div>
+      <div class="left--2 subtitle">
+        <!-- <a href="#subtitle1">Why I chose this topic</a> -->
+        <span>Why I chose this topic</span>
+      </div>
+      <div class="mid--2" id="subtitle1">
+        <p>
+          Sexual communication is the key to opening up a fulfilling and
+          satisfying intimate relationship with your partner. It's not just
+          about talking about sex, it's about really understanding each other's
+          desires, boundaries, and needs in the bedroom. It's about creating a
+          safe, nonjudgmental space where partners can express themselves openly
+          and honestly without fear of rejection or misunderstanding. It's about
+          actively listening to your partner, being empathetic, and validating
+          their feelings. It's about expressing your desires confidently while
+          respecting your partner's boundaries. It's about negotiating and
+          finding a mutually satisfying solution. It's about building intimacy
+          and connection through effective sexual communication. In short,
+          better sexual communication is about fostering a healthy and
+          satisfying sexual relationship based on mutual respect, understanding,
+          and emotional intimacy.
+        </p>
+      </div>
+      <div class="right--2"></div>
+      <div class="left--3 subtitle">
+        <!-- <a href="#subtitle2">Why use cartoon character card</a> -->
+        <span>Literature Review</span>
+      </div>
+      <div class="mid--3">
+        <p id="subtitle2">
+          From Literature and research, I learned the reason why sexual
+          communication is difficult for many people, because it is
+          face-threatening, which means when people talk about messages about
+          sex or stigmatized identities will threaten the positive social value
+          a person claims for themselves during an interaction.
+        </p>
+        <br />
+        <p>
+          One study found that technology-mediated communication plays an
+          important role in communication among members of the stigmatized
+          community of BDSM.
+        </p>
+        <br />
+        <p>
+          Technology results in less shame or embarrassment in disclosing
+          stigmatized desires or aiding in moving past personal feelings of
+          shyness. Discussing topics only through TMC can harm relationship
+          satisfaction, while face-to-face discussions are noted to be more
+          valuable for communication, especially for something as intimate as
+          sex.
+        </p>
+        <br />
+        <p>
+          Research also found that Integration of TMC and FtF interaction was
+          positively associated with relational satisfaction. At the same time,
+          The very meaning of FtF interaction can be shaped by TMC.
+        </p>
+      </div>
+      <div class="right--3"></div>
+      <div class="left--4 subtitle">
+        <!-- <a href="#subtitle3">How to get your exclusive card</a> -->
+        <span>How the game works?</span>
+      </div>
+      <div class="mid--4" id="subtitle3">
+        <p>
+          Interlunar, is an integration of TMC with FtF interactions.  it aims
+          to stimulate FtF sexual communication through digital sexual
+          communication.
+        </p>
+        <br />
+        <p>
+          The game can be divided into four steps, the first three parts will be
+          conducted through TMC, the first part is a couple co-edited question
+          list through the app, the second part is reading the questions
+          together from the screen, and then giving the answer. Last step is
+          face-to-face conversation based on the question or the mismatched
+          answers. 
+        </p>
+        <br />
+        <img src="../assets/Yue/story 1.png" />
+      </div>
+      <div class="right--4"></div>
+      <div class=""></div>
+    </div>
+    <footer></footer>
+    <script>
+      const infokey1 = document.querySelector('.info-key--1')
+      const infokey2 = document.querySelector('.info-key--2')
+      const infokey3 = document.querySelector('.info-key--3')
+
+      const splitWord = function (el) {
+        return (el.innerHTML = el.innerText
+          .split('')
+          .map((e) => (!e.trim() ? '<div>&nbsp</div>' : `<div>${e}</div>`))
+          .join(''))
+      }
+      splitWord(infokey1)
+      splitWord(infokey2)
+      splitWord(infokey3)
+
+      const subTitle1 = document.querySelector('.left--2 ')
+      const subTitle2 = document.querySelector('.left--3 ')
+      const subTitle3 = document.querySelector('.left--4 ')
+      const para1 = document.querySelector('#subtitle1')
+      const para2 = document.querySelector('#subtitle2')
+      const para3 = document.querySelector('#subtitle3')
+
+      const navInto = function (triggerEl, changedEl) {
+        triggerEl.addEventListener('click', () => {
+          changedEl.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end',
+            inline: 'center',
+          })
+        })
+      }
+
+      const navTo = function (triggerEl, changedEl) {
+        triggerEl.addEventListener('click', () => {
+          document.documentElement.scrollBy({
+            top:
+              changedEl.getBoundingClientRect().top -
+              triggerEl.getBoundingClientRect().top,
+            left: 0,
+            behavior: 'smooth',
+          })
+        })
+      }
+
+      navTo(subTitle1, para1, 100)
+      navTo(subTitle2, para2, 136)
+      // navTo(subTitle3, para3)
+
+      window.addEventListener('scroll', (e) => {
+        console.log('---')
+        console.log(window.scrollY)
+        console.log(subTitle2.getBoundingClientRect().top)
+        console.log(para2.getBoundingClientRect().top)
+        console.log(getOffset(subTitle2).top)
+        console.log(getOffset(para2).top)
+        console.log('---')
+      })
+
+      function getOffset(el) {
+        const rect = el.getBoundingClientRect()
+        return {
+          left: rect.left + window.scrollX,
+          top: rect.top + window.scrollY,
+        }
+      }
+    </script>
+  </body>
+</html>
