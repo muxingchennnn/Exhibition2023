@@ -148,7 +148,7 @@ img {
   grid-row: 3/4;
 }
 
-.typewriter {
+/* .typewriter {
   position: relative;
 }
 
@@ -157,14 +157,14 @@ img {
   position: absolute;
   margin-top: auto;
   margin-bottom: auto;
-  /* bottom: 0; */
+  bottom: 0;
   top: 0.5rem;
-  /* right: 0; */
+  right: 0;
   width: 1px;
   height: 1rem;
   background: whitesmoke;
   animation: blinkCursor 0.8s steps(3) infinite;
-}
+} */
 
 @keyframes blinkCursor {
   0%,

@@ -173,3 +173,18 @@ body {
 img {
   margin-left: -10px;
 }
+
+#wide-image {
+  object-fit: contain;
+  grid-column: 1/-1;
+  grid-row: 5;
+  margin-top: 60px;
+}
+
+.left--8 {
+  grid-column: 1 / 4;
+  grid-row: 8;
+
+  position: sticky;
+  top: 352px;
+}

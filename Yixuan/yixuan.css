@@ -1,0 +1,12 @@
+.marquee span {
+  font-family: 'Stardom-Regular';
+  font-size: 100px;
+}
+
+#outlier {
+  object-fit: contain;
+  height: 200px;
+  width: auto;
+  float: right;
+  margin-top: -80px;
+}
