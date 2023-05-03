@@ -15,10 +15,30 @@
     <style>
       @import url('https://fonts.cdnfonts.com/css/georgia-2?styles=33750,33752,33751,33753');
     </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <div class="marquee">
-      <span> To:You To:You To:You To:You To:You To:You To:You To:You </span>
+    <div class="marquee marquee marquee--hover-pause">
+      <div class="marquee__content">
+        <span>To:You</span>
+        <span>To:You</span>
+        <span>To:You</span>
+        <span>To:You</span>
+      </div>
+      <!-- Mirrors the content above -->
+      <div class="marquee__content" aria-hidden="true">
+        <span>To:You</span>
+        <span>To:You</span>
+        <span>To:You</span>
+        <span>To:You</span>
+      </div>
     </div>
     <div class="container">
       <div class="left--1">
@@ -26,7 +46,6 @@
           <div class="info-key info-key--1">DESIGNER</div>
           <div class="info info--1">
             <span>Dominique Alvarado</span>
-            <!-- <span style="font-size: 14px">姜 禹汉</span> -->
           </div>
           <div class="info-key info-key--2">KEYWORD</div>
           <div class="info info--2">
@@ -39,7 +58,7 @@
           <div class="info info--3">Tad Hirsch</div>
         </div>
       </div>
-      <div class="mid--1">
+      <div class="mid--1 text">
         <p>
           The notion of home is universally understood. However, home is
           challenging to define and even more difficult to simulate in
@@ -58,11 +77,10 @@
         </p>
       </div>
       <div class="right--1"></div>
-      <div class="left--2 subtitle">
-        <!-- <a href="#subtitle1">Why I chose this topic</a> -->
+      <div class="left--2 subtitle navigation-trigger">
         <span>Design Intervention</span>
       </div>
-      <div class="mid--2" id="subtitle1">
+      <div class="mid--2 text navigation-destination">
         <p>
           A design hypothesis was established as “to capture a moment where
           participants can reflect, share, and express their notion of home by
@@ -114,27 +132,26 @@
         <br />
       </div>
       <div class="right--2"></div>
-      <div class="left--3 subtitle">
-        <!-- <a href="#subtitle2">Why use cartoon character card</a> -->
+      <div class="left--3 subtitle navigation-trigger">
         <span>To:You Workshop</span>
       </div>
-      <div class="mid--3">
-        <div class="offset" id="subtitle2"></div>
+      <div class="mid--3 text navigation-destination">
+        <div class="offset"></div>
         <img src="../assets/dominique/IMG_7760.jpg" alt="image" />
-        <p>
-          Final prototype of home using reflect, connect, and share  as
-          categorical steps that lead the participants to contribute in this 
+        <figcaption>
+          Final prototype of home using reflect, connect, and share as
+          categorical steps that lead the participants to contribute in this
           physical and interactive workshop.
-        </p>
+        </figcaption>
+
         <br />
       </div>
       <div class="right--3"></div>
-      <div class="left--4 subtitle">
-        <!-- <a href="#subtitle3">How to get your exclusive card</a> -->
+      <div class="left--4 subtitle navigation-trigger">
         <span>To:You Evaluation</span>
       </div>
-      <div class="mid--4">
-        <div class="offset" id="subtitle3"></div>
+      <div class="mid--4 text navigation-destination">
+        <div class="offset"></div>
         <img src="../assets/dominique/IMG_7749.jpg" alt="image" />
         <figcaption>
           Participants ‘weaving’ connections and sharing their notion of home.
@@ -153,92 +170,67 @@
         </p>
       </div>
       <div class="right--4"></div>
-      <div class="left--5 subtitle">
-        <!-- <a href="#subtitle3">How to get your exclusive card</a> -->
+      <div class="left--5 subtitle navigation-trigger">
         <span>Final Iteration</span>
       </div>
-      <div class="mid--5">
-        <div class="offset" id="subtitle4"></div>
+      <div class="mid--5 text navigation-destination">
+        <div class="offset"></div>
         <img src="../assets/dominique/IMG_7768.jpg" alt="image" />
-        <br />
-        <br />
-        <p>
+        <figcaption>
           What is home? A chaotic and expressive social network designed by
           migratory college students.
-        </p>
+        </figcaption>
       </div>
       <div class="right--5"></div>
-      <div class=""></div>
+      <div class="navigation-back">
+        <div class="back-icon">
+          <a href="../index.html"><ion-icon name="arrow-back"></ion-icon></a>
+        </div>
+        <div class="back-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/logo.svg"
+              href="../index.html"
+              class="back-logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <footer>
+        <div class="footer-sites">
+          <div class="site">
+            <a href="https://camd.northeastern.edu/"
+              >College of Arts, Media and Design</a
+            >
+          </div>
+          <div class="site">
+            <a
+              href="https://camd.northeastern.edu/program/experience-design-mfa/"
+              >Experience Design</a
+            >
+          </div>
+          <div class="site">
+            <a href="https://camd.northeastern.edu/visualization/"
+              >Information Design and Data Visualization</a
+            >
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/northeasterncamd/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/NU_CAMD">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer></footer>
-    <script>
-      const infokey1 = document.querySelector('.info-key--1')
-      const infokey2 = document.querySelector('.info-key--2')
-      const infokey3 = document.querySelector('.info-key--3')
 
-      const splitWord = function (el) {
-        return (el.innerHTML = el.innerText
-          .split('')
-          .map((e) => (!e.trim() ? '<div>&nbsp</div>' : `<div>${e}</div>`))
-          .join(''))
-      }
-      splitWord(infokey1)
-      splitWord(infokey2)
-      splitWord(infokey3)
-
-      const subTitle1 = document.querySelector('.left--2 ')
-      const subTitle2 = document.querySelector('.left--3 ')
-      const subTitle3 = document.querySelector('.left--4 ')
-      const subTitle4 = document.querySelector('.left--5 ')
-      const para1 = document.querySelector('#subtitle1')
-      const para2 = document.querySelector('#subtitle2')
-      const para3 = document.querySelector('#subtitle3')
-      const para4 = document.querySelector('#subtitle4')
-
-      const navInto = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          changedEl.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end',
-            inline: 'center',
-          })
-        })
-      }
-
-      const navTo = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          document.documentElement.scrollBy({
-            top:
-              changedEl.getBoundingClientRect().top -
-              triggerEl.getBoundingClientRect().top,
-            left: 0,
-            behavior: 'smooth',
-          })
-        })
-      }
-
-      navTo(subTitle1, para1, 100)
-      navTo(subTitle2, para2, 136)
-      navTo(subTitle3, para3, 172)
-      navTo(subTitle4, para4, 208)
-
-      window.addEventListener('scroll', (e) => {
-        console.log('---')
-        console.log(window.scrollY)
-        console.log(subTitle2.getBoundingClientRect().top)
-        console.log(para2.getBoundingClientRect().top)
-        console.log(getOffset(subTitle2).top)
-        console.log(getOffset(para2).top)
-        console.log('---')
-      })
-
-      function getOffset(el) {
-        const rect = el.getBoundingClientRect()
-        return {
-          left: rect.left + window.scrollX,
-          top: rect.top + window.scrollY,
-        }
-      }
-    </script>
+    <script src="../script/project-page.js"></script>
   </body>
 </html>

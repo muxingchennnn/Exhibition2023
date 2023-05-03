@@ -15,12 +15,28 @@
     <style>
       @import url('https://fonts.cdnfonts.com/css/vonique-43');
     </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <div class="marquee">
-      <span>
-        Interlunar Interlunar Interlunar Interlunar Interlunar Interlunar
-      </span>
+    <div class="marquee marquee marquee--hover-pause">
+      <div class="marquee__content">
+        <span>Interlunar&nbsp;&nbsp;</span>
+        <span>Interlunar&nbsp;&nbsp;</span>
+        <span>Interlunar&nbsp;&nbsp;</span>
+      </div>
+      <!-- Mirrors the content above -->
+      <div class="marquee__content" aria-hidden="true">
+        <span>Interlunar&nbsp;&nbsp;</span>
+        <span>Interlunar&nbsp;&nbsp;</span>
+        <span>Interlunar&nbsp;&nbsp;</span>
+      </div>
     </div>
     <div class="container">
       <div class="left--1">
@@ -28,20 +44,19 @@
           <div class="info-key info-key--1">DESIGNER</div>
           <div class="info info--1">
             <span>Yue Yu</span>
-            <!-- <span style="font-size: 14px">姜 禹汉</span> -->
           </div>
           <div class="info-key info-key--2">KEYWORD</div>
           <div class="info info--2">
-            #Experience design<br />
-            #Sexual communication<br />
-            #Difficult conversation<br />
-            #Multimodal interaction
+            #Experience Design<br />
+            #Sexual Communication<br />
+            #Difficult Conversation<br />
+            #Multimodal Interaction
           </div>
           <div class="info-key info-key--3">ADVISOR</div>
           <div class="info info--3">Michael Arnold Mages</div>
         </div>
       </div>
-      <div class="mid--1">
+      <div class="mid--1 text">
         <p>
           Interlunar provides a novel multimodal interaction on how couples can
           communicate about sex. The integration of TMC (Technology-mediated
@@ -52,12 +67,13 @@
         </p>
 
         <img src="../assets/Yue/1.png" id="outlier" />
+        <!-- <img src="https://imgur.com/Ja10zrl.png" id="outlier" /> -->
       </div>
       <div class="right--1"></div>
-      <div class="left--2 subtitle">
+      <div class="left--2 subtitle navigation-trigger">
         <span>Why I chose this topic</span>
       </div>
-      <div class="mid--2" id="subtitle1">
+      <div class="mid--2 text navigation-destination">
         <p>
           Sexual communication is the key to opening up a fulfilling and
           satisfying intimate relationship with your partner. It's not just
@@ -76,12 +92,12 @@
         </p>
       </div>
       <div class="right--2"></div>
-      <div class="left--3 subtitle">
+      <div class="left--3 subtitle navigation-trigger">
         <!-- <a href="#subtitle2">Why use cartoon character card</a> -->
         <span>Literature Review</span>
       </div>
-      <div class="mid--3">
-        <p id="subtitle2">
+      <div class="mid--3 text navigation-destination">
+        <p>
           From Literature and research, I learned the reason why sexual
           communication is difficult for many people, because it is
           face-threatening, which means when people talk about messages about
@@ -113,10 +129,10 @@
         <img src="../assets/Yue/2.jpg" />
       </div>
       <div class="right--3"></div>
-      <div class="left--4 subtitle">
+      <div class="left--4 subtitle navigation-trigger">
         <span>How the game works?</span>
       </div>
-      <div class="mid--4" id="subtitle3">
+      <div class="mid--4 text navigation-destination">
         <p>
           Interlunar, is an integration of TMC with FtF interactions.  it aims
           to stimulate FtF sexual communication through digital sexual
@@ -135,17 +151,19 @@
         <img src="../assets/Yue/3.png" />
       </div>
       <div class="right--4"></div>
-      <div class="left--5 subtitle">
+      <div class="left--5 subtitle navigation-trigger">
         <span>Information Architecture</span>
       </div>
-      <div class="mid--5" id="subtitle4"></div>
+      <div class="mid--5 text" height=""></div>
 
       <div class="right--5"></div>
-      <img src="../assets/Yue/ 4.png" id="wide-image" />
-      <div class="left--6 subtitle">
+      <div class="navigation-destination" id="wide-image">
+        <img src="../assets/Yue/ 4.2.png" />
+      </div>
+      <div class="left--6 subtitle navigation-trigger">
         <span>In-Game Interfaces</span>
       </div>
-      <div class="mid--6" id="subtitle5">
+      <div class="mid--6 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Yue/5.gif" />
         <p>
@@ -166,97 +184,94 @@
       </div>
 
       <div class="right--6"></div>
-      <div class="left--7 subtitle">
+      <div class="left--7 subtitle navigation-trigger">
         <span
-          >App Workflow<br />
-          (Co-create Section)</span
-        >
+          >App Workflow<br /><span class="light-subtitle"
+            >(Co-create Section)</span
+          >
+        </span>
       </div>
-      <div class="mid--7" id="subtitle6">
+      <div class="mid--7 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Yue/6.png" />
       </div>
 
       <div class="right--7"></div>
-      <div class="left--8 subtitle">
+      <div class="left--8 subtitle navigation-trigger">
         <span
-          >App Workflow<br />
-          (Co-create Section)</span
-        >
+          >App Workflow<br /><span class="light-subtitle"
+            >(In-Game Section)</span
+          >
+        </span>
       </div>
-      <div class="mid--8" id="subtitle7">
+      <div class="mid--8 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Yue/7.png" />
       </div>
 
       <div class="right--8"></div>
+      <div class="left--9 subtitle navigation-trigger">
+        <span>Interlunar Video</span>
+      </div>
+      <div class="mid--9 text navigation-destination">
+        <div class="offset"></div>
+        <iframe
+          src="https://www.youtube.com/embed/Ji3QQG7a2fU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="right--9"></div>
+      <div class="navigation-back">
+        <div class="back-icon">
+          <a href="../index.html"><ion-icon name="arrow-back"></ion-icon></a>
+        </div>
+        <div class="back-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/logo.svg"
+              href="../index.html"
+              class="back-logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <footer>
+        <div class="footer-sites">
+          <div class="site">
+            <a href="https://camd.northeastern.edu/"
+              >College of Arts, Media and Design</a
+            >
+          </div>
+          <div class="site">
+            <a
+              href="https://camd.northeastern.edu/program/experience-design-mfa/"
+              >Experience Design</a
+            >
+          </div>
+          <div class="site">
+            <a href="https://camd.northeastern.edu/visualization/"
+              >Information Design and Data Visualization</a
+            >
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/northeasterncamd/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/NU_CAMD">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer></footer>
-    <script>
-      const infokey1 = document.querySelector('.info-key--1')
-      const infokey2 = document.querySelector('.info-key--2')
-      const infokey3 = document.querySelector('.info-key--3')
-
-      const splitWord = function (el) {
-        return (el.innerHTML = el.innerText
-          .split('')
-          .map((e) => (!e.trim() ? '<div>&nbsp</div>' : `<div>${e}</div>`))
-          .join(''))
-      }
-      splitWord(infokey1)
-      splitWord(infokey2)
-      splitWord(infokey3)
-
-      const subTitle1 = document.querySelector('.left--2 ')
-      const subTitle2 = document.querySelector('.left--3 ')
-      const subTitle3 = document.querySelector('.left--4 ')
-      const para1 = document.querySelector('#subtitle1')
-      const para2 = document.querySelector('#subtitle2')
-      const para3 = document.querySelector('#subtitle3')
-
-      const navInto = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          changedEl.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end',
-            inline: 'center',
-          })
-        })
-      }
-
-      const navTo = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          document.documentElement.scrollBy({
-            top:
-              changedEl.getBoundingClientRect().top -
-              triggerEl.getBoundingClientRect().top,
-            left: 0,
-            behavior: 'smooth',
-          })
-        })
-      }
-
-      navTo(subTitle1, para1, 100)
-      navTo(subTitle2, para2, 136)
-      // navTo(subTitle3, para3)
-
-      window.addEventListener('scroll', (e) => {
-        console.log('---')
-        console.log(window.scrollY)
-        console.log(subTitle2.getBoundingClientRect().top)
-        console.log(para2.getBoundingClientRect().top)
-        console.log(getOffset(subTitle2).top)
-        console.log(getOffset(para2).top)
-        console.log('---')
-      })
-
-      function getOffset(el) {
-        const rect = el.getBoundingClientRect()
-        return {
-          left: rect.left + window.scrollX,
-          top: rect.top + window.scrollY,
-        }
-      }
-    </script>
+    <script src="../script/project-page.js"></script>
   </body>
 </html>

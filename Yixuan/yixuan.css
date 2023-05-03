@@ -1,6 +1,7 @@
-.marquee span {
+.marquee {
   font-family: 'Stardom-Regular';
   font-size: 100px;
+  margin-bottom: 100px;
 }
 
 #outlier {
@@ -9,4 +10,50 @@
   width: auto;
   float: right;
   margin-top: -80px;
+}
+
+.navigation-back {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 7;
+  /* width: 100%; */
+  margin-top: -56px;
+}
+
+.back-icon {
+  font-size: 30px;
+  /* width: 50%; */
+}
+
+.back-logo {
+  width: 70%;
+  margin: 0;
+}
+
+.back-logo > a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.divider {
+  grid-column: 4/-2;
+  grid-row: 6;
+  height: 0.01rem;
+  background: #f26922;
+  margin-top: 2rem;
+}
+
+footer {
+  grid-column: 4/-2;
+  grid-row: 7;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: -15px;
+  font-size: 16px;
 }

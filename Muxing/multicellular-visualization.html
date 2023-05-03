@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"Multicellular" visualization</title>
+    <link href="../css/projectPage.css" rel="stylesheet" />
+    <link href="../css/infoWrapper.css" rel="stylesheet" />
+    <link href="./muxing.css" rel="stylesheet" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/clash-display');
+      </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="marquee marquee marquee--hover-pause">
+      <div class="marquee__content">
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+      <!-- Mirrors the content above -->
+      <div class="marquee__content" aria-hidden="true">
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+        <span
+          >&ldquo;Multicellular&rdquo;&nbsp;Visualization&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+        >
+      </div>
+    </div>
+    <div class="container">
+      <div class="left--1">
+        <div class="infoWrapper">
+          <div class="info-key info-key--1">DESIGNER</div>
+          <div class="info info--1">
+            <span>Muxing Chen</span>
+          </div>
+          <div class="info-key info-key--2">KEYWORD</div>
+          <div class="info info--2">
+            #Visualizing Complexity<br />
+            #Visual Composition<br />
+            #Composition Framework<br />
+            #Composite Visualization
+          </div>
+          <div class="info-key info-key--3">ADVISOR</div>
+          <div class="info info--3">Paolo Ciuccarelli</div>
+        </div>
+      </div>
+      <div class="mid--1 text">
+        <p>
+          Complex datasets (such as heterogenous, large-scale, spatiotemporal
+          data, etc.) are becoming more increasingly accessible, as we are able
+          to generate, collect and store greater quantities and varieties of
+          information. However, no single visualization is optimal for all
+          possible tasks. To address this challenge, a strategy called composite
+          visualization combine multiple single visual representations in the
+          same visual space in order to display different aspects of the complex
+          dataset.
+        </p>
+        <br />
+        <img src="../assets/muxing/1.png" alt="image" />
+        <figcaption>Fig 1. <i>100 Years of London Performance</i> by Guillermina Sutter Schneider
+        </figcaption>
+        <br />
+        <div class="paragraph-offset-1">
+          <p>
+            Composite visualization consists of multiple component visualizations 
+            and a set of relations between them. This thesis project focuses on 
+            developing a composition framework that identifies ten composition 
+            patterns, based on the relations between component visualizations and 
+            with which we can classify and deconstruct composite visualization.
+          </p>
+          <br />
+          <p>
+            The thesis starts by contemplating what are the fundamental relations 
+            between component visualizations.
+          </p>
+        </div>
+        </div>
+      <div id="wide-image-1">
+        <img src="../assets/muxing/2.svg" alt="image" />
+        <figcaption>Fig 2. Concept map of composite visualization and the framework developed in this thesis</figcaption>
+      </div>
+      <br />
+      <div class="right--1"></div>
+
+      <div class="left--2 subtitle navigation-trigger">
+        <span
+          >Fundamental Relation<br /><span class="light-subtitle"
+            ><div class="vertical-align"><ion-icon name="arrow-forward-outline"></ion-icon> Spatial
+              Relation</div></span
+          >
+        </span>
+      </div>
+      <div id="wide-image-2"><img
+        src="../assets/muxing/3.svg"
+        alt="image"
+      /></div>
+      <div class="mid--2 text navigation-destination" >
+        <div class="paragraph-offset-2">
+          <p>
+            Visual composition of two graphic representations or 
+            combining one with a group of visualizations in the same geometrical 
+            space inevitably requires consideration of the spatial relation 
+            between them. 
+          </p>
+          <br />
+          <p>
+            The figure above depicts five types of spatial relations between shapes 
+            in a two-dimensional geometrical plane, which are included, inscribed, 
+            intersected, circumscribed, and separated. In the context of composite 
+            visualization, the intersection between two components is relatively 
+            rare, so this thesis does not account for this circumstance. 
+            Layering pattern is defined when the spatial relation between two 
+            visualizations is included or inscribed, whereas integration pattern is 
+            defined when the spatial relation between two visualizations is 
+            circumscribed and separated.
+          </p>
+        </div>
+        <br />
+        
+        
+      </div>
+      
+      <div class="right--2"></div>
+      <div class="left--3 subtitle navigation-trigger">
+        <span
+          >Fundamental Relation<br /><span class="light-subtitle"
+            ><div class="vertical-align"><ion-icon name="arrow-forward-outline"></ion-icon> Data
+              Relation</div></span
+          >
+        </span>
+      </div>
+      <div class="mid--3 text navigation-destination">
+        <div class="image-offset"></div>
+        <img
+          src="../assets/muxing/4.png"
+          alt="image"
+        />
+        
+        <br>
+        <br>
+        <p>
+          Another fundamental relation is data relation. Due to the purpose of combining 
+          multiple visual representations to show the different facets of the dataset, 
+          there must be some inherent data relations between the visualizations 
+          rather than mechanically bringing them together. This thesis specifies 
+          five types of data relation between visualizations, which are listed above.
+        </p>
+      </div>
+      <div class="right--3"></div>
+      <div class="left--4 subtitle navigation-trigger">
+        <span>Composition Framework</span>
+      </div>
+      <div id="wide-image-3" class="text">
+        <img src="../assets/muxing/5.svg" alt="image" />
+        <figcaption id="caption-offset-2">Fig 3. Ten composition patterns defined by spatial relations and  data relations between two visualizations</figcaption>
+      </div>
+      <div class="mid--4 text navigation-destination">
+        <div class="paragraph-offset-3">
+          <p>
+            With two spatial patterns and five types of data relation specified, 
+            this thesis formulates a framework that is a two-by-five matrix that 
+            identifies ten composition patterns, as demonstrated in the figure.
+          </p>
+        </div>
+      </div>
+      <div class="right--4"></div>
+      <div class="left--5 subtitle navigation-trigger">
+        <span
+          >Composition Framework<br /><span class="light-subtitle"
+            ><div class="vertical-align"><ion-icon name="arrow-forward-outline"></ion-icon> Item-to-item Layering</div></span
+          >
+        </span>
+      </div>
+      <div class="mid--5 text navigation-destination" >
+        <div class="image-offset"></div>
+        <img
+          src="https://iibawards-prod.s3.amazonaws.com/projects/images/000/000/203/large.jpg?1403777288"
+          alt="image"
+        />
+        <figcaption>Fig 4. <i>Brain Drain</i> by Accurat</figcaption>
+        
+        <p>
+          Item-to-item layering pattern is defined as one visualization overlays 
+          on another visualization that shares related data items. The above 
+          composite visualization is a typical example of this pattern, and 
+          one way to deconstruct it is to break it down into a scatter plot, 
+          a network diagram, and data glyphs. <a href="https://drive.google.com/file/d/1ANkBgpebFjE-_paC_k7gEKwpplO5EP0l/view?usp=sharing">(Click to view more information about 
+            composition patterns and corresponding examples)</a>
+        </p>
+        
+      </div>
+      <div class="right--5"></div>
+      <div class="left--6 subtitle navigation-trigger">
+        <span
+          >Physical Artifact</span
+          >
+        </span>
+      </div>
+      <div class="mid--6 text navigation-destination" >
+        <div class="image-offset"></div>
+        <img
+          src="../assets/muxing/exhibition-1.JPG"
+          alt="image"
+        />
+        <figcaption>Fig 5. Front view of the installation</figcaption>
+        <div class="image-offset"></div>
+        <div class="image-offset"></div>
+        <img
+          src="../assets/muxing/exhibition-2.JPG"
+          alt="image"
+        />
+        <figcaption>Fig 6. Side view of the installation</figcaption>
+        <p>
+          Inspired by Exploring the Brain Drain, this exhibited physical artifact 
+          reveals the ambiguity of composite visualization deconstruction. Three 
+          sets of acrylic sheets display three possible ways to deconstruct the 
+          same composite visualization (as seen from the front). Visual elements 
+          distribute differently on three layers of each set (viewed from the sides). 
+          There is currently no consensus and guidelines on how to deconstruct 
+          composite visualizations, which makes communicating the deconstruction 
+          of composite visualization equivocal. For example, this visualization can
+          also be broken down into a bubble chart, a network diagram, and data glyphs.
+        </p>
+        
+      </div>
+      <div class="right--6"></div>
+      <div class="navigation-back">
+        <div class="back-icon">
+          <a href="../index.html"><ion-icon name="arrow-back"></ion-icon></a>
+        </div>
+        <div class="back-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/logo.svg"
+              href="../index.html"
+              class="back-logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <footer>
+        <div class="footer-sites">
+          <div class="site">
+            <a href="https://camd.northeastern.edu/"
+              >College of Arts, Media and Design</a
+            >
+          </div>
+          <div class="site">
+            <a
+              href="https://camd.northeastern.edu/program/experience-design-mfa/"
+              >Experience Design</a
+            >
+          </div>
+          <div class="site">
+            <a href="https://camd.northeastern.edu/visualization/"
+              >Information Design and Data Visualization</a
+            >
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/northeasterncamd/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/NU_CAMD">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+    <script src="../script/project-page.js"></script>
+  </body>
+</html>

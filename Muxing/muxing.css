@@ -1,0 +1,131 @@
+.marquee {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.left--3 {
+  position: sticky;
+  top: 172px;
+}
+
+.left--4 {
+  position: sticky;
+  top: 244px;
+}
+.left--5 {
+  position: sticky;
+  top: 280px;
+}
+.left--6 {
+  position: sticky;
+  top: 352px;
+}
+
+#wide-image-1 {
+  object-fit: contain;
+  grid-column: 4/-1;
+  grid-row: 1/2;
+  margin-top: 680px;
+}
+
+#wide-image-2 {
+  object-fit: contain;
+  grid-column: 3/10;
+  grid-row: 2;
+  /* margin-top: 100px; */
+}
+
+#wide-image-3 {
+  object-fit: contain;
+  grid-column: 1/10;
+  grid-row: 4;
+  margin-top: 100px;
+}
+
+.image-offset {
+  height: 7px;
+}
+
+.paragraph-offset-1 {
+  margin-top: 392px;
+}
+
+.paragraph-offset-2 {
+  margin-top: 560px;
+}
+
+.paragraph-offset-3 {
+  margin-top: 800px;
+}
+
+figcaption {
+  /* margin-top: 2px; */
+  /* margin-bottom: 10px; */
+}
+
+#caption-offset-1 {
+  margin-left: 120px;
+  line-height: 46px;
+}
+
+#caption-offset-2 {
+  margin-left: 266px;
+}
+
+.light-subtitle {
+  font-weight: 200;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navigation-back {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
+
+  align-items: center;
+  grid-column: 1/3;
+  grid-row: 8;
+  /* width: 100%; */
+  margin-top: -56px;
+}
+
+.back-icon {
+  font-size: 30px;
+  /* width: 50%; */
+}
+
+.back-logo {
+  width: 70%;
+  margin: 0;
+}
+
+.back-logo > a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.divider {
+  grid-column: 4/-2;
+  grid-row: 7;
+  height: 0.01rem;
+  background: #f26922;
+  margin-top: 2rem;
+}
+
+footer {
+  grid-column: 4/-2;
+  grid-row: 8;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: -15px;
+  font-size: 16px;
+}

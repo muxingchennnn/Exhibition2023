@@ -10,29 +10,44 @@ body {
   color: whitesmoke;
 }
 
+/* title marquess effect ------------------------------------------*/
+/* inspiration: https://ryanmulligan.dev/blog/css-marquee/ */
 .marquee {
-  width: 100%;
-  margin-bottom: 100px;
-  white-space: nowrap;
+  --gap: 1rem;
+  display: flex;
   overflow: hidden;
-}
-
-.marquee span {
-  font-family: 'OCR A Extended', sans-serif;
+  user-select: none;
+  gap: var(--gap);
   font-size: 100px;
-  padding-left: -10%;
-  display: inline-block;
-  animation: marquee-animation 120s linear infinite;
+  margin-bottom: 100px;
 }
 
-/* @keyframes marquee-animation {
-  0% {
-    transform: translate(0, 0);
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translate(-90%, 0);
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
   }
-} */
+}
+
+.marquee__content {
+  animation: scroll 25s linear infinite;
+}
+
+.marquee--hover-pause:hover .marquee__content {
+  animation-play-state: paused;
+}
+
+/* title marquess effect ------------------------------------------*/
 
 .container {
   font-family: 'satoshi', sans-serif;
@@ -51,8 +66,7 @@ body {
 }
 
 .container a:link {
-  /* text-decoration: none; */
-  font-style: italic;
+  text-decoration: none;
   color: whitesmoke;
 }
 
@@ -60,15 +74,7 @@ body {
   color: whitesmoke;
 }
 
-.mid--1,
-.mid--2,
-.mid--3,
-.mid--4,
-.mid--5,
-.mid--6,
-.mid--7,
-.mid--8,
-.mid--9 {
+.text {
   font-size: 20px;
   font-weight: 400;
   line-height: 36px;
@@ -263,6 +269,10 @@ body {
   grid-row: 9;
 }
 
+footer {
+  height: 400px;
+}
+
 img {
   margin: auto;
   width: 100%;
@@ -280,10 +290,6 @@ img {
   float: right;
 }
 
-footer {
-  height: 400px;
-}
-
 .offset {
   height: 7px;
 }
@@ -293,3 +299,30 @@ figcaption {
   font-size: 16px;
   margin-top: -8px;
 }
+
+/* footer ------------------------------------------*/
+
+footer {
+  height: 100px;
+}
+
+.footer-sites,
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.site > a,
+.icon > a {
+  color: #707070;
+  transition: 0.05s linear;
+  text-decoration: none;
+}
+
+.site > a:hover,
+.icon > a:hover {
+  color: whitesmoke;
+  transition: 0.05s linear;
+}
+
+/* footer ------------------------------------------*/

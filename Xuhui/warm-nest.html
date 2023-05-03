@@ -15,13 +15,28 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
     </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
-    <div class="marquee">
-      <span>
-        Warm Nest Warm Nest Warm Nest Warm Nest Warm Nest Warm Nest Warm Nest
-        Warm Nest
-      </span>
+    <div class="marquee marquee marquee--hover-pause">
+      <div class="marquee__content">
+        <span>Warm Nest&nbsp;&nbsp;</span>
+        <span>Warm Nest&nbsp;&nbsp;</span>
+        <span>Warm Nest&nbsp;&nbsp;</span>
+      </div>
+      <!-- Mirrors the content above -->
+      <div class="marquee__content" aria-hidden="true">
+        <span>Warm Nest&nbsp;&nbsp;</span>
+        <span>Warm Nest&nbsp;&nbsp;</span>
+        <span>Warm Nest&nbsp;&nbsp;</span>
+      </div>
     </div>
     <div class="container">
       <div class="left--1">
@@ -43,7 +58,7 @@
           <div class="info info--3">Bolor Amgalan</div>
         </div>
       </div>
-      <div class="mid--1">
+      <div class="mid--1 text">
         <p>
           The aging population, driven by urbanization, low birth rates, and
           increasing life expectancy, has become a pressing global issue.
@@ -66,11 +81,11 @@
         </p>
       </div>
       <div class="right--1"></div>
-      <div class="left--2 subtitle">
+      <div class="left--2 subtitle navigation-trigger">
         <!-- <a href="#subtitle1">Why I chose this topic</a> -->
         <span>Why I chose this topic</span>
       </div>
-      <div class="mid--2" id="subtitle1">
+      <div class="mid--2 text navigation-destination">
         <p>
           According to the survey, Chinese older adults’ population reached
           0.264 billion (above 60 years old) in 2020, accounting for 18.70% of
@@ -96,11 +111,11 @@
         </p>
       </div>
       <div class="right--2"></div>
-      <div class="left--3 subtitle">
+      <div class="left--3 subtitle navigation-trigger">
         <!-- <a href="#subtitle2">Why use cartoon character card</a> -->
         <span>Territory Map</span>
       </div>
-      <div class="mid--3" id="subtitle2">
+      <div class="mid--3 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/Territory Map.png" alt="image" />
         <p>
@@ -110,10 +125,10 @@
         </p>
       </div>
       <div class="right--3"></div>
-      <div class="left--4 subtitle">
+      <div class="left--4 subtitle navigation-trigger">
         <span>Website Framework</span>
       </div>
-      <div class="mid--4" id="subtitle3">
+      <div class="mid--4 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/frame work.png" alt="image" />
         <p>
@@ -128,10 +143,10 @@
         </p>
       </div>
       <div class="right--4"></div>
-      <div class="left--5 subtitle">
+      <div class="left--5 subtitle navigation-trigger">
         <span>System Map</span>
       </div>
-      <div class="mid--5" id="subtitle4">
+      <div class="mid--5 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/system map1.png" alt="image" />
         <p>
@@ -144,10 +159,10 @@
         </p>
       </div>
       <div class="right--5"></div>
-      <div class="left--6 subtitle">
+      <div class="left--6 subtitle navigation-trigger">
         <span>Persona</span>
       </div>
-      <div class="mid--6" id="subtitle4">
+      <div class="mid--6 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/persona.png" alt="image" />
         <br />
@@ -161,14 +176,14 @@
         </p>
       </div>
       <div class="right--6"></div>
-      <div class="left--7 subtitle">
+      <div class="left--7 subtitle navigation-trigger">
         <span
-          >Journey Map - <br /><span class="light"
+          >Journey Map - <br /><span class="light-subtitle"
             >Before use this website</span
           ></span
         >
       </div>
-      <div class="mid--7" id="subtitle4">
+      <div class="mid--7 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/journey map group.png" alt="image" />
         <br />
@@ -187,14 +202,14 @@
         </p>
       </div>
       <div class="right--7"></div>
-      <div class="left--8 subtitle">
+      <div class="left--8 subtitle navigation-trigger">
         <span
-          >Journey Map - <br /><span class="light"
+          >Journey Map - <br /><span class="light-subtitle"
             >After use this website</span
           ></span
         >
       </div>
-      <div class="mid--8" id="subtitle4">
+      <div class="mid--8 text navigation-destination">
         <div class="offset"></div>
         <img src="../assets/Xuhui/journey map group after.png" alt="image" />
         <br />
@@ -207,10 +222,10 @@
         </p>
       </div>
       <div class="right--8"></div>
-      <div class="left--9 subtitle">
+      <div class="left--9 subtitle navigation-trigger">
         <span>Demo Video</span>
       </div>
-      <div class="mid--9" id="subtitle4">
+      <div class="mid--9 text navigation-destination">
         <div class="offset"></div>
         <iframe
           src="https://www.youtube.com/embed/enk19Jr-dUg"
@@ -221,74 +236,55 @@
         ></iframe>
       </div>
       <div class="right--9"></div>
+      <div class="navigation-back">
+        <div class="back-icon">
+          <a href="../index.html"><ion-icon name="arrow-back"></ion-icon></a>
+        </div>
+        <div class="back-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/logo.svg"
+              href="../index.html"
+              class="back-logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <footer>
+        <div class="footer-sites">
+          <div class="site">
+            <a href="https://camd.northeastern.edu/"
+              >College of Arts, Media and Design</a
+            >
+          </div>
+          <div class="site">
+            <a
+              href="https://camd.northeastern.edu/program/experience-design-mfa/"
+              >Experience Design</a
+            >
+          </div>
+          <div class="site">
+            <a href="https://camd.northeastern.edu/visualization/"
+              >Information Design and Data Visualization</a
+            >
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/northeasterncamd/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/NU_CAMD">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer></footer>
 
-    <script>
-      const infokey1 = document.querySelector('.info-key--1')
-      const infokey2 = document.querySelector('.info-key--2')
-      const infokey3 = document.querySelector('.info-key--3')
-
-      const splitWord = function (el) {
-        return (el.innerHTML = el.innerText
-          .split('')
-          .map((e) => (!e.trim() ? '<div>&nbsp</div>' : `<div>${e}</div>`))
-          .join(''))
-      }
-      splitWord(infokey1)
-      splitWord(infokey2)
-      splitWord(infokey3)
-
-      const subTitle1 = document.querySelector('.left--2 ')
-      const subTitle2 = document.querySelector('.left--3 ')
-      const subTitle3 = document.querySelector('.left--4 ')
-      const para1 = document.querySelector('#subtitle1')
-      const para2 = document.querySelector('#subtitle2')
-      const para3 = document.querySelector('#subtitle3')
-
-      const navInto = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          changedEl.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end',
-            inline: 'center',
-          })
-        })
-      }
-
-      const navTo = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          document.documentElement.scrollBy({
-            top:
-              changedEl.getBoundingClientRect().top -
-              triggerEl.getBoundingClientRect().top,
-            left: 0,
-            behavior: 'smooth',
-          })
-        })
-      }
-
-      navTo(subTitle1, para1, 100)
-      navTo(subTitle2, para2, 136)
-      // navTo(subTitle3, para3)
-
-      window.addEventListener('scroll', (e) => {
-        console.log('---')
-        console.log(window.scrollY)
-        console.log(subTitle2.getBoundingClientRect().top)
-        console.log(para2.getBoundingClientRect().top)
-        console.log(getOffset(subTitle2).top)
-        console.log(getOffset(para2).top)
-        console.log('---')
-      })
-
-      function getOffset(el) {
-        const rect = el.getBoundingClientRect()
-        return {
-          left: rect.left + window.scrollX,
-          top: rect.top + window.scrollY,
-        }
-      }
-    </script>
+    <script src="../script/project-page.js"></script>
   </body>
 </html>

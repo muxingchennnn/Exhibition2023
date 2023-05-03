@@ -15,6 +15,14 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
     </style>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -27,8 +35,6 @@
       </div>
       <div class="mid--title">
         <img src="../assets/Yuhan/hero.png" />
-        <br />
-        <br />
         <br />
         <br />
         <br />
@@ -50,7 +56,7 @@
           <div class="info info--3">Ann McDonald</div>
         </div>
       </div>
-      <div class="mid--1">
+      <div class="mid--1 text">
         <p>
           “Seeing Sonic Styles” focuses on developing comparative visuals that
           show the playing styles of classical music pianists. This research
@@ -82,11 +88,11 @@
         </p>
       </div>
       <div class="right--1"></div>
-      <div class="left--2 subtitle">
+      <div class="left--2 subtitle navigation-trigger">
         <!-- <a href="#subtitle1">Why I chose this topic</a> -->
         <span>Why I chose this topic</span>
       </div>
-      <div class="mid--2" id="subtitle1">
+      <div class="mid--2 text navigation-destination" id="subtitle1">
         <p>
           I personally have a great interest in the classical music genre, as I
           have played piano myself. When I listen to different performances by
@@ -110,7 +116,7 @@
         </p>
       </div>
       <div class="right--2"></div>
-      <div class="left--3 subtitle">
+      <div class="left--3 subtitle navigation-trigger">
         <!-- <a href="#subtitle2">Why use cartoon character card</a> -->
         <span
           >Design Prototypes - <br /><span class="light"
@@ -118,7 +124,7 @@
           ></span
         >
       </div>
-      <div class="mid--3" id="subtitle2">
+      <div class="mid--3 text navigation-destination" id="subtitle2">
         <img src="../assets/Yuhan/Lang Lang.png" />
         <figcaption> Lang Lang’s Climax Part in Ballade No.1</figcaption>
         <br />
@@ -146,7 +152,7 @@
         </p>
       </div>
       <div class="right--3"></div>
-      <div class="left--4 subtitle">
+      <div class="left--4 subtitle navigation-trigger">
         <!-- <a href="#subtitle3">How to get your exclusive card</a> -->
         <span
           >Design Prototypes -<br /><span class="light"
@@ -154,7 +160,7 @@
           ></span
         >
       </div>
-      <div class="mid--4" id="subtitle3">
+      <div class="mid--4 text navigation-destination" id="subtitle3">
         <img src="../assets/Yuhan/final design.png" />
         <br />
         <p>
@@ -182,74 +188,55 @@
         </p>
       </div>
       <div class="right--4"></div>
-      <div class=""></div>
+      <div class="navigation-back">
+        <div class="back-icon">
+          <a href="../index.html"><ion-icon name="arrow-back"></ion-icon></a>
+        </div>
+        <div class="back-logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo/logo.svg"
+              href="../index.html"
+              class="back-logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <footer>
+        <div class="footer-sites">
+          <div class="site">
+            <a href="https://camd.northeastern.edu/"
+              >College of Arts, Media and Design</a
+            >
+          </div>
+          <div class="site">
+            <a
+              href="https://camd.northeastern.edu/program/experience-design-mfa/"
+              >Experience Design</a
+            >
+          </div>
+          <div class="site">
+            <a href="https://camd.northeastern.edu/visualization/"
+              >Information Design and Data Visualization</a
+            >
+          </div>
+        </div>
+        <div class="footer-icons">
+          <div class="icon">
+            <a href="https://www.instagram.com/northeasterncamd/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/NU_CAMD">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer></footer>
-    <script>
-      const infokey1 = document.querySelector('.info-key--1')
-      const infokey2 = document.querySelector('.info-key--2')
-      const infokey3 = document.querySelector('.info-key--3')
 
-      const splitWord = function (el) {
-        return (el.innerHTML = el.innerText
-          .split('')
-          .map((e) => (!e.trim() ? '<div>&nbsp</div>' : `<div>${e}</div>`))
-          .join(''))
-      }
-      splitWord(infokey1)
-      splitWord(infokey2)
-      splitWord(infokey3)
-
-      const subTitle1 = document.querySelector('.left--2 ')
-      const subTitle2 = document.querySelector('.left--3 ')
-      const subTitle3 = document.querySelector('.left--4 ')
-      const para1 = document.querySelector('#subtitle1')
-      const para2 = document.querySelector('#subtitle2')
-      const para3 = document.querySelector('#subtitle3')
-
-      const navInto = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          changedEl.scrollIntoView({
-            behavior: 'smooth',
-            block: 'end',
-            inline: 'center',
-          })
-        })
-      }
-
-      const navTo = function (triggerEl, changedEl) {
-        triggerEl.addEventListener('click', () => {
-          document.documentElement.scrollBy({
-            top:
-              changedEl.getBoundingClientRect().top -
-              triggerEl.getBoundingClientRect().top,
-            left: 0,
-            behavior: 'smooth',
-          })
-        })
-      }
-
-      navTo(subTitle1, para1, 100)
-      navTo(subTitle2, para2, 136)
-      navTo(subTitle3, para3, 208)
-
-      window.addEventListener('scroll', (e) => {
-        console.log('---')
-        console.log(window.scrollY)
-        console.log(subTitle2.getBoundingClientRect().top)
-        console.log(para2.getBoundingClientRect().top)
-        console.log(getOffset(subTitle2).top)
-        console.log(getOffset(para2).top)
-        console.log('---')
-      })
-
-      function getOffset(el) {
-        const rect = el.getBoundingClientRect()
-        return {
-          left: rect.left + window.scrollX,
-          top: rect.top + window.scrollY,
-        }
-      }
-    </script>
+    <script src="../script/project-page.js"></script>
   </body>
 </html>

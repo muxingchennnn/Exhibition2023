@@ -67,7 +67,7 @@ tl.from(
 )
 
 tl.staggerFrom(
-  '.navigation-sites',
+  '.footer-sites',
   2,
   {
     opacity: 0,
@@ -79,7 +79,7 @@ tl.staggerFrom(
 )
 
 tl.staggerFrom(
-  '.navigation-icons',
+  '.footer-icons',
   2,
   {
     opacity: 0,
